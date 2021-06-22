@@ -1,0 +1,27 @@
+@import 'mixins'
+@import 'header'
+
+// colors
+$main: #128BE1
+
+
+// @include font-face(Headline, fonts/Headline/CoHeadlineCorp, null, null, ttf)
+@include font-face(Headline, fonts/Headline/CoHeadlineCorp-Regular, null, null, woff)
+
+body
+    font-family: Headline
+    // font-family: 'Co'
+    
+.btn
+    text-transform: uppercase
+    color: #fff
+    background: linear-gradient(95.07deg, #007AD3 -2.11%, #2FA6F7 94.62%)
+    height: 54px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 12px
+    min-width: 300px
+    border-radius: 0
+    outline: none
+    border: none
