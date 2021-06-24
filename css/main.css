@@ -54,6 +54,7 @@
     background: #fff;
     border-bottom: 5px solid #6CC1FF;
     padding-bottom: 48px;
+    z-index: 10;
   }
 }
 
