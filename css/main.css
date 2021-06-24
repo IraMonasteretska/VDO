@@ -454,6 +454,16 @@
   margin-bottom: 54px;
 }
 
+@media (max-width: 1440px) {
+  .intro__img {
+    text-align: center;
+  }
+  .intro__img img {
+    width: 550px;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .intro__img {
     text-align: center;
@@ -747,7 +757,7 @@
 .comment__items .comment__slider-next {
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  bottom: -7px;
   color: #128BE1;
   font-size: 15px;
   line-height: 22px;
@@ -905,6 +915,7 @@
   line-height: 24px;
   margin-bottom: 18px;
   position: relative;
+  text-align: justify;
 }
 
 @media (max-width: 767px) {
@@ -916,13 +927,13 @@
 }
 
 .comment__items .comment-item__list ul li span {
-  content: '';
-  width: 12px;
+  width: 8px;
+  height: 8px;
   display: inline-block;
-  height: 12px;
   border-radius: 50%;
   background: #000;
   margin-right: 3px;
+  margin-bottom: 2px;
 }
 
 @media (max-width: 767px) {

@@ -280,7 +280,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="video-item video-item_orange">
-                            <div class="video-item__title">Je suis <span>Candidat</span></div>
+                            <div class="video-item__title">Je suis <span>Recruteur</span></div>
                             <div class="video-item__video">
                                 <img src="./img/video-orange.jpg" alt="">
                             </div>
@@ -348,8 +348,8 @@
 
         <section class="form">
             <div class="container">
-                <div class="row offset-lg-2">
-                    <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
                         <div class="form__title">Rejoignez-nous</div>
                         <div class="form__subtitle">& vivez pleinement l’expérience</div>
                         <div class="form__wrapper">
@@ -362,11 +362,11 @@
                                             </div>
                                             
                                             <div class="form__tabs-item" data-trigger='candidat_select'>
-                                                <input id="candidat" type="radio" name='Je-suis' checked>
+                                                <input id="candidat" type="radio" name='Je-suis' value="Je-suis candidat" checked>
                                                 <label for="candidat">Candidat</label>
                                             </div>
                                             <div class="form__tabs-item" data-trigger='recruteur_select'>
-                                                <input id="recruteur" type="radio" name='Je-suis'>
+                                                <input id="recruteur" type="radio" name='Je-suis' value="Je-suis recruteur">
                                                 <label for="recruteur" >Recruteur</label>
                                             </div>
                                             
@@ -380,25 +380,25 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group tab_content" id="candidat_select"  data-content='candidat_select'>
-                                            <select class="form_select" name="" id="">
+                                            <select class="form_select" name="Je-suis-selected" id="">
                                                 <option>Choisir une option</option>
-                                                <option value="">En recherche d’emploi</option>
-                                                <option value="">Stage, alternance</option>
-                                                <option value="">Freelance</option>
-                                                <option value="">Autre</option>
+                                                <option value="En recherche d’emploi">En recherche d’emploi</option>
+                                                <option value="Stage, alternance">Stage, alternance</option>
+                                                <option value="Freelance">Freelance</option>
+                                                <option value="Autre">Autre</option>
                                             </select>
                                         </div>
 
                                         <div class="form-group tab_content" id="recruteur_select" data-content='recruteur_select'>
-                                            <select class="form_select" name="" id="">
+                                            <select class="form_select" name="Je-suis-selected" id="">
                                                 <option>Choisir une option</option>
-                                                <option value="">Start-up</option>
-                                                <option value="">PME</option>
-                                                <option value="">Grand groupe</option>
-                                                <option value="">Cabinet de recrutement</option>
-                                                <option value="">Agence d’intérim</option>
-                                                <option value="">Indépendant</option>
-                                                <option value="">Autre</option>
+                                                <option value="Start-up">Start-up</option>
+                                                <option value="PME">PME</option>
+                                                <option value="Grand groupe">Grand groupe</option>
+                                                <option value="Cabinet de recrutement">Cabinet de recrutement</option>
+                                                <option value="Agence d’intérim">Agence d’intérim</option>
+                                                <option value="Indépendant">Indépendant</option>
+                                                <option value="Autre">Autre</option>
 
                                             </select>
                                         </div>
