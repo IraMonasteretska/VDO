@@ -695,7 +695,13 @@
   height: 100% !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+  .comment__slider .slick-list {
+    padding: 50px 90px 33px 2px;
+  }
+}
+
+@media (max-width: 576px) {
   .comment__slider .slick-list {
     padding: 50px 40px 33px 2px;
   }
@@ -786,6 +792,12 @@
   top: 50%;
 }
 
+@media (max-width: 767px) {
+  .comment__items .row .col-lg-4 {
+    padding: 0 5px !important;
+  }
+}
+
 .comment__items .row .col-lg-4:nth-child(1) .comment-item {
   margin-right: 10px;
 }
@@ -821,7 +833,7 @@
 
 @media (max-width: 767px) {
   .comment__items .comment-item {
-    margin-right: 30px !important;
+    margin-right: 0px !important;
   }
 }
 

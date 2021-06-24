@@ -20,7 +20,10 @@
                     display: flex
                     float: none
                     height: 100% !important
-            +mq(lg) 
+            
+            +mq(md)
+                padding: 50px 90px 33px 2px
+            +mq(sm) 
                 padding: 50px 40px 33px 2px
         
         .slick-dots
@@ -87,6 +90,8 @@
 
         .row
             .col-lg-4
+                +mq(md)
+                    padding: 0 5px !important
                 &:nth-child(1)
                     .comment-item
                         margin-right: 10px
@@ -111,7 +116,7 @@
             +mq(lg) 
                 padding: 55px 15px 30px 15px
             +mq(md) 
-                margin-right: 30px !important
+                margin-right: 0px !important
 
             
             &::before 
