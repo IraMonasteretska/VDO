@@ -20,14 +20,14 @@ $(document).ready(function() {
     $('.video-item__more').on('click', function(){
         $(this).toggleClass('active')
         $(this).next().slideToggle()
-        
+
     })
 
 
     // comment Slider /////////////
     ///////////////////////////////
     
-        if (window.matchMedia('(max-width: 768px)').matches) {
+        if (window.matchMedia('(max-width: 767px)').matches) {
             
             var $reviewsSlider = $(".comment__slider");
            
@@ -63,7 +63,7 @@ $(document).ready(function() {
             
         } 
         $(window).resize(function(){
-            if($(window).width() < 768){
+            if($(window).width() < 767){
                 // var $reviewsSlider = $(".comment__slider");
                 $(".comment__slider").not('.slick-initialized').slick({
                     infinite: true,

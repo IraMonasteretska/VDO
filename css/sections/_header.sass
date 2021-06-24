@@ -3,6 +3,10 @@
     display: flex
     justify-content: space-between
     align-items: center
+    position: sticky
+    top: 0
+    z-index: 3
+    background: #fff
     +mq(xxl)
         padding: 30px
     +mq(xl)
@@ -23,7 +27,7 @@
             left: 0%
             top: 77px
             width: 100%
-            transform: translate(-100%,0)
+            transform: translate(0, calc(-100% - 77px) )
             transition: 0.4s
             background: #fff
             border-bottom: 5px solid #6CC1FF
