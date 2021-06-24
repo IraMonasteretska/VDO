@@ -798,6 +798,12 @@
   }
 }
 
+@media (max-width: 991px) {
+  .comment__items .row .col-lg-4 {
+    padding: 0 10px !important;
+  }
+}
+
 .comment__items .row .col-lg-4:nth-child(1) .comment-item {
   margin-right: 10px;
 }
