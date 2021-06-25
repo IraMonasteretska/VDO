@@ -5,6 +5,10 @@
         box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
         padding: 56px 90px 48px 90px
         background: #fff
+        height: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
         +mq(xl)
             padding: 45px 30px 35px 30px
         +mq(lg)
@@ -12,6 +16,7 @@
         +mq(md)
             padding: 28px 25px 15px 25px
             margin-bottom: 30px
+            height: auto
         &_blue
             border: 4px solid $main
             .video-item__title
@@ -48,35 +53,50 @@
             margin-bottom: 56px
             +mq(lg)
                 margin-bottom: 24px
+                img
+                    max-width: 200px
             +mq(md)
                 margin-bottom: 17px
+                img
+                    max-width: 150px
         &__more
             display: none
             +mq(md)
-                display: inline-block
+                text-align: center
+                display: flex
+                justify-content: center
                 color: $main
-                font-weight: 500
+                font-weight: bold
                 font-size: 14px
                 line-height: 22px
                 position: relative
                 margin-bottom: 10px
-                &::after
-                    content: ''
-                    width: 12px
-                    display: block
-                    height: 7px
-                    background: url(../img/arrow.svg)
-                    background-size: cover
-                    background-repeat: no-repeat
-                    position: absolute
-                    right: -20px
-                    top: 9px
-                    transition: 0.2s
+                span
+                    display: inline-block
+                    position: relative
+                    &::after
+                        content: ''
+                        width: 12px
+                        display: block
+                        height: 7px
+                        background: url(../img/arrow.svg)
+                        background-size: cover
+                        background-repeat: no-repeat
+                        position: absolute
+                        right: -20px
+                        top: 9px
+                        transition: 0.2s
             &.active
-                &::after
-                    transform: rotate(180deg)
+                span
+                    &::after
+                        transform: rotate(180deg)
 
         &__content
+            margin-top: auto
+            // height: 100%
+            // display: flex
+            // flex-direction: column
+
             +mq(md)
                 // padding-top: 10px
                 display: none
@@ -88,9 +108,11 @@
                 margin-bottom: 24px
             +mq(md)
                 font-size: 14px
-                line-height: 22px
+                line-height: 20px
 
         &__list
+            +mq(md)
+                padding-top: 15px
             .video-list-item
                 display: flex
                 margin-bottom: 36px
@@ -140,6 +162,7 @@
         
         &__footer
             text-align: center
+            // margin-top: auto
             span 
                 font-weight: bold
                 font-size: 18px

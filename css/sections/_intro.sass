@@ -1,6 +1,8 @@
 .intro
     margin-bottom: 150px
-    +mq(lg)
+    +mq(xxxl)
+        margin-bottom: 120px
+    +mq(xxl)
         margin-bottom: 100px
 
     +mq(md)
@@ -18,9 +20,13 @@
         line-height: 64px
         color: #1D232B
         margin-bottom: 54px
+        +mq(xxxl)
+            font-size: 38px
+            line-height: 52px
         +mq(xxl)
-            font-size: 34px
-            line-height: 44px
+            font-size: 30px
+            line-height: 34px
+            margin-bottom: 24px
         +mq(lg)
             font-size: 28px
             line-height: 36px
@@ -29,6 +35,7 @@
             font-size: 22px
             line-height: 32px
             margin-bottom: 24px
+            text-align: center
         span 
             color: $main
     &__text
@@ -40,11 +47,16 @@
         margin-bottom: 54px
 
     &__img
-        +mq(1600px)
-            text-align: center
+        text-align: center
+        img
+            width: 600px
+            max-width: 100%
+        +mq(xxxl)
             img
-                width: 550px
-                max-width: 100%
+                width: 450px
+        +mq(xxl)
+            img
+                width: 400px
         +mq(md)
             text-align: center
             margin-bottom: 24px
@@ -58,5 +70,6 @@
             justify-content: center
         .btn
             +mq(sm)
-                width: 100%
-                min-width: 100%
+                width: 250px
+                max-width: 250px
+                min-width: 250px
