@@ -121,4 +121,18 @@ $(document).ready(function() {
     });
   }
 
+  if ($('#privacy').is(':checked')) {
+    $('.form-btn-submit').prop('disabled', false)
+  } else {
+    $('.form-btn-submit').attr('disabled', 'disabled');
+  }
+  
+  $('#privacy').on('change', function () {
+      if ($(this).is(':checked')) {
+        $('.form-btn-submit').prop('disabled', false)
+      } else {
+        $('.form-btn-submit').attr('disabled', 'disabled');
+      }
+  })
+  
 });

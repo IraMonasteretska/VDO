@@ -163,3 +163,33 @@
             justify-content: center
             +mq(md)
                 margin-top: 6px
+
+.checkbox-item     
+    padding: 0 30px
+    input[type=checkbox] 
+        display: none
+
+        &:checked + label::before
+            content: ''
+            width: 8px
+            height: 8px
+            background: #000
+            display: block
+            // border-radius: 50%
+            position: absolute
+            top: 10px
+            left: -20px
+            
+        & + label
+            position: relative
+            cursor: pointer
+            &::after
+                content: ''
+                width: 16px
+                height: 16px
+                border: 2px solid #000
+                display: block
+                // border-radius: 50%
+                position: absolute
+                top: 6px
+                left: -24px
